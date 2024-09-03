@@ -1,0 +1,51 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container div{
+
+    
+    width:20px;
+    height:20px;
+    /* background: rgb(20, 247, 236); */
+    border: 4px solid;
+    margin: 5px;
+    border-radius: 50%;
+}
+.box1,.box2,.box3{
+    animation:type 0.7s linear infinite;
+    animation-delay: 0.2s;
+
+}
+.box2{
+    animation-delay: 0.2s;
+}
+.box3{
+    animation-delay: 0.2s;
+}
+/* .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+@keyframes type{
+    0%{
+        /* transform:translateY(0); */
+    }
+    50%{
+    /* transform:translateY(10px); */
+    rotate: 180deg;
+    border-color: aqua;
+    border-bottom: red;
+    border-top: green;
+}
+100%{
+    /* transform: translateY(0); */
+    rotate: 360deg;         
+    
+}
+}
